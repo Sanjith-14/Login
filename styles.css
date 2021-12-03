@@ -138,4 +138,8 @@ button:hover  {
       bottom: 50px;
       left: 210px;
   }
+    .error {
+    font-size: 17px;
+    margin-top: 5px;
+  }
 }
