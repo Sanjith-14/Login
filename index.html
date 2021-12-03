@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="login.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+    <title>Log-in</title>
+</head>
+<body>
+    <form id="form">
+
+        <!--Register link-->
+
+        <div class="account">
+            <h3>Haven't a Account ? <u> <a href="register.html"> Register Here <i class="fas fa-arrow-right"></i></a></u></h3>
+        </div>
+
+        <!--username Input here-->
+
+        <div>
+            <label for="username">User Name</label>
+            <i class="fas fa-user"></i>
+            <input type="text" name="username" id="username" placeholder="ABC" />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        </div>
+
+      <!--Email Input here-->
+  
+        <div>
+            <label for="email">Email</label>
+            <i class="far fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com" />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        </div>
+  
+      <!--  Password Input here -->
+  
+        <div>
+            <label for="password">Password</label>
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" id="password" placeholder="Password here"  />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        </div>
+
+        <!--Forget password section-->
+
+        <div class="forget_password">
+            <h3>Did you <a href="">forget your password ? </a></h3>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+        <!--div class="display">
+            <button type="submit" class="btn">Sign in with 
+            <img style="height: 40px;width: 40px;" src="google.png" alt=""> 
+            </button>
+        </div-->
+        <button type="button" class="btn">
+            <h4>Sign in with &nbsp;</h4>
+            <img style="height: 40px;width: 40px;" src="google.png" alt=""> 
+        </button>
+    </form>
+    <script src="script_login.js"></script>
+</body>
+</html>
