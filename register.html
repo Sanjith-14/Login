@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+    <link rel="icon" href="register.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-up</title>
+</head>
+<body>
+    <form id="form">
+
+        <!--username Input here-->
+
+        <div>
+            <label for="username">User Name</label>
+            <i class="fas fa-user"></i>
+            <input type="text" name="username" id="username" placeholder="ABC" />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        </div>
+
+        <!--Roll number Input here-->
+
+        <div>
+            <label for="rollnum">Roll Number</label>
+            <i class="fas fa-user-circle"></i>
+            <input type="text" name="rollnum" id="rollnum" placeholder="20BBB000" />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        </div>
+
+
+      <!--Email Input here-->
+  
+        <div>
+            <label for="email">Email</label>
+            <i class="far fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="abc@gmail.com" />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        </div>
+  
+      <!--  Password Input here -->
+  
+        <div>
+            <label for="password">Password</label>
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" id="password" placeholder="Password here"  />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        </div>
+
+        <!-- Confirm Password Input here -->
+  
+        <div>
+            <label for="password">Confirm Password</label>
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" id="c_password" placeholder="Confirm Password here"  />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        </div>
+
+        <div class="forget_password">
+            <h3>Have an Account ? <a href="index.html"><u>Login Here</u></a></h3>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+
+        <button type="button" class="btn">
+            <h4>Sign up with &nbsp;</h4>
+            <img style="height: 40px;width: 40px;" src="google.png" alt=""> 
+        </button>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
