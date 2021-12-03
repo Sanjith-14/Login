@@ -1,0 +1,160 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 50px;
+    margin-left: 20%;
+    background-color: #00000010;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    /*margin:auto;
+    width: 50%;*/
+  }
+ u{
+     cursor: pointer;
+ }
+.account{
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(233, 13, 203);
+}
+.account .fas{
+    bottom:15%;
+}
+
+form div input {
+    width: 90%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+  }
+label {
+    display: flex;
+    margin-bottom: 5px;
+    font-size: 25px;
+  }
+
+form div {
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+input:focus {
+    border: 2px solid #ec7b71;
+  }
+form div i {
+    position: absolute;
+    padding: 10px;
+  }
+  
+.success-icon,
+.failure-icon
+{
+    right: 0;
+    opacity: 0;
+    bottom: 50px;
+  }
+
+
+.failure-icon,
+.error {
+    color: red;
+  }
+  
+.success-icon {
+    color: green;
+    bottom: 20px;
+  }
+  
+.error {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+button {
+    margin-top: 15px;
+    margin-left: 15%;
+    width: 80%;
+    height: 45px;
+    background-color: #f2796e;
+    border: 2px solid #f2796e;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+button:hover  {
+    opacity: 0.8;
+    background-color: black;
+    color: greenyellow;
+    font-weight: bold;
+}
+.forget_password{
+    text-align: right;
+    color: rgb(60, 20, 238);
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.btn{
+    height: 50px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+    justify-content:center;
+    margin-left: 25%;
+    margin-top: 50px;
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+@media(max-width:720px){
+  form{
+    width: 55%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+ button,.btn{
+      height: 50px;
+      width: 200px;
+      margin-left: auto;
+  }
+  .success-icon{
+      left: 210px;
+  }
+  .failure-icon{
+      bottom: 50px;
+      left: 210px;
+  }
+}
+
+@media(max-width:1200px){
+  form{
+    width: 70%;
+    margin:15% 10%;
+  }
+ button,.btn{
+      height: 70px;
+      width: 350px;
+      margin:3% 30% ;
+  }
+  .success-icon{
+      left: 90%;
+  }
+  .failure-icon{
+      bottom: 50px;
+      left: 90%;
+  }
+}
